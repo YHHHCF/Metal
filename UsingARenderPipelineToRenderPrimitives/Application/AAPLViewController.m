@@ -19,7 +19,7 @@ Implementation of our cross-platform view controller
 {
     [super viewDidLoad];
     _view = (MTKView *)self.view;
-    _view.enableSetNeedsDisplay = YES;
+//    _view.enableSetNeedsDisplay = YES;
     _view.clearColor = MTLClearColorMake(0.5, 0.5, 0.5, 1.0);
     _view.device = MTLCreateSystemDefaultDevice();
     NSAssert(_view.device, @"Metal is not supported on this device");
